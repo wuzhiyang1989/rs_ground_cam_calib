@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <name>extrinsic_calib</name>
+  <description>extrinsic_calib</description>
+  <version>0.0.1</version>
+  <maintainer email="paulfurgale@mavt.ethz.ch">Paul Furgale</maintainer>
+  <author>Paul Furgale</author>
+  <license>New BSD</license>
+  <!-- used for catkin_package() -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+
+  <!-- List dependencies to system libs and other catkin packages here. -->
+  <build_depend>camera_models</build_depend>
+
+  <build_depend>yaml-cpp</build_depend>
+
+  <!-- used for msg files are turned into source code for C++, Python, and other languages 
+  Note that at build time, we need "message_generation", while at runtime, we only need "message_runtime". -->
+  <build_depend>message_generation</build_depend>
+  <run_depend>message_runtime</run_depend>
+</package>
